@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #fff8f5;
+    padding: 1rem 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: #6b4e4e;
+}
+
+.logo span{
+    font-size: 2rem;
+}
+
+.logo strong{
+    display: block;
+    color: #6b4e4e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+.logo small{
+    display: block;
+    color: #ae2f62;
+    font-size: 0.6rem;
+    letter-spacing: 0.2rem;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+header a{
+    color: #6b4e4e;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+header nav a:hover{
+    color: #ae2f62;
+}
+
+.acoes-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #6b4e4e;
+    font-size: 1.4rem;
+}
