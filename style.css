@@ -152,9 +152,10 @@ header nav a:hover{
 
 .categorias article{
     background-color: #FDCBDC;
-    border: 1px solid ;
+    border: 2px solid ;
     padding: 2rem;
     border-radius: 10px;
+    box-shadow: 0.3rem 0.3rem 0.3rem #6b4e4e;
 }
 
 .categorias img{
@@ -180,6 +181,7 @@ header nav a:hover{
     padding: 1.5rem;
     text-align: center;
     background-color: #f7b6c8;
+    color: #ae2f62;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -193,7 +195,9 @@ header nav a:hover{
     background-color: #fff8f5;
     padding: 1.5rem;
     border-radius: 1.5rem;
+    box-shadow: 0.3rem 0.3rem 0.3rem #6b4e4e;
 }
+
 
 .buques img{
     width: 100%;
@@ -223,6 +227,82 @@ header nav a:hover{
 }
 
 .buques button:hover{
+    background-color: #6b4e4e;
+
+}
+
+.sobre{
+    padding: 2rem;
+    text-align: justify;
+    background-color: #fff8f5;
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.imagem-sobre{
+    width: 33.%;
+}
+
+.imagem-sobre img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.sobre h2{
+    text-align: center;
+    color: #ae2f62;
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.sobre p{
+    color: #C37992;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.sobre h3{
+    text-align: center;
+    color: #ae2f62;
+    font-size: 1.5rem;
+    padding-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.sobre ul{
+    color: #C37992;
+    list-style: none;
+    padding: 1rem;
+}
+
+.sobre li{
+    margin-bottom:1rem;
+}
+
+.conteudo-escolher{
+    width: 33.3%;
+    
+}
+
+.sobre-conteudo{
+    width: 33.3%;
+    border-right: 2px solid #ae2f62;
+    padding-right: 4rem;
+}
+.sobre-conteudo button{
+    background-color:#ae2f62;
+    color: white;
+    padding: 1rem ;
+    border-radius: 2rem;
+    border: none;
+}
+
+.sobre-conteudo button:hover{
     background-color: #6b4e4e;
 
 }
