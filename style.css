@@ -152,7 +152,7 @@ header nav a:hover{
 
 .categorias article{
     background-color: #FDCBDC;
-    border: 2px solid ;
+    border: none ;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0.3rem 0.3rem 0.3rem #6b4e4e;
@@ -178,7 +178,7 @@ header nav a:hover{
 }
 
 .buques{
-    padding: 1.5rem;
+    padding: 2rem;
     text-align: center;
     background-color: #f7b6c8;
     color: #ae2f62;
@@ -224,6 +224,7 @@ header nav a:hover{
     padding: 0.5rem;
     border-radius: 2rem;
     border: none;
+    display: inline-block;
 }
 
 .buques button:hover{
@@ -305,4 +306,37 @@ header nav a:hover{
 .sobre-conteudo button:hover{
     background-color: #6b4e4e;
 
+}
+
+#formulario{
+    padding: 2rem;
+    background-color: #FDCBDC;
+}
+
+#formulario h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="password"],#formulario input[type="date"]{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#formulario select{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#formulario textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+#formulario > label{
+    display: block;
+    margin-bottom: 0.3rem;
 }
