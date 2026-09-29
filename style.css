@@ -91,11 +91,14 @@ header nav a:hover{
     color: #6b4e4e;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
+    line-height: 1.2;
 }
 
 .hero-texto p{
     color: #6b4e4e;
     line-height: 1.6;
+    text-align: justify;
+    line-height: 1.5;
 }
 
 .hero-imagem{
@@ -115,6 +118,8 @@ header nav a:hover{
 
 .hero-imagem figcaption{
     color: #6b4e4e;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .botao{
@@ -134,19 +139,24 @@ header nav a:hover{
     padding: 2rem;
     text-align: center;
     color: #ae2f62;
-    background-color: #fff8f5;
+    background-color: #E6C8CE;
 }
 
 .titulo-secao{
     text-align: center;
-    margin: 10px;
+    margin: 2px;
     font-size: 20px;
     color: #ae2f62;
 }
 
+.titulo-secao p{
+    font-weight: bold;
+}
+
 .categorias{
+    padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;   
 }
 
@@ -395,9 +405,10 @@ footer{
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 2rem;
-    text-align: center;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -418,7 +429,7 @@ footer{
 footer nav{
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 footer nav a{
@@ -426,8 +437,20 @@ footer nav a{
     text-decoration: none;
 }
 
-.copyright{
-    width: 100%;
-    text-align: center;
+footer nav a:hover{
+    color: #f786b4;
 }
 
+.copyright{
+   margin-top: 2rem;
+   flex-basis: 100%;
+   text-align: center;
+   font-size: 0.6rem;
+}
+
+.footer-centro{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap: 1rem;
+}
