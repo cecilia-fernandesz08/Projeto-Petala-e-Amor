@@ -74,11 +74,98 @@ header nav a:hover{
     font-size: 1.4rem;
 }
 
-#inicio{
+#hero{
+    background-color: #f7b6c8;
+    padding: 40px 7%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: ;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero-texto{
+  width: 55%;
+}
+
+.hero-texto h1{
+    color: #6b4e4e;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+
+.hero-texto p{
+    color: #6b4e4e;
+    line-height: 1.6;
+}
+
+.hero-imagem{
+    width: 45%;
+}
+
+.hero-imagem figure{
+    margin: 0;
+}
+
+.hero-imagem img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.botao{
+    display: inline-block;
+    background-color: #ae2f62;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.botao:hover{
+    background-color: #6b4e4e;
+}
+
+.flores{
+    padding: 2rem;
+    text-align: center;
     color: #ae2f62;
-   
+}
+
+.titulo-secao{
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    color: #ae2f62;
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1.5rem;   
+}
+
+.categorias article{
+    background-color: #fff8f5;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.categorias img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.categorias h3{
+    font-size: 1.5rem;
+    color: #ae2f62;
+    margin: 0.5rem;
+}
+
+.categorias article p{
+    line-height: 1.5;
+    font-size: 1rem;
+    color: #C37992;
 }
