@@ -20,7 +20,7 @@
             <a href="#inicio">Início</a>
             <a href="#flores">Flores</a>
             <a href="#buques">Buquês</a>
-            <a href="#contato">Contato</a>
+            <a href="#">Contato</a>
         </nav>
         <div class="acoes-header">
             <span>⌕</span>
@@ -152,22 +152,30 @@
 
         </section>
         <section id="formulario" class="formulario">
-            <h2>Faça seu pedido</h2>
+            <div class="formulario-texto">
+                <h2>Faça seu pedido</h2>
+                <p>Será um prazer tornar seu momento mais especial com nossas flores.</p>
+            </div>
 
             <form action="">
-                <label for="nome">Nome completo:</label>
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required pattern="[A-Za-zÀ-ÿ\s]+">
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
-
-                <label for="data">Data da entrega</label>
-                <input type="date" id="data" name="data" required>
-
-                <label for="tipo">Escolha seu buquê:</label>
+                <div class="formulario-campos">
+                    <div class="campo">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required pattern="[A-Za-zÀ-ÿ\s]+">
+                    </div>
+                    <div class="campo">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="campo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="campo">
+                        <label for="data">Data da entrega</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+                    <label for="tipo">Escolha seu buquê:</label>
 
                 <select name="tipo" id="tipo" required>
                     <option value="">Selecione uma opção</option>
@@ -176,48 +184,54 @@
                     <option value="alegria">Buquê Alegria</option>
                     <option value="elegancia">Buquê Elegância</option>
                 </select>
-
-                <fieldset>
-                    <legend>Qual é a ocasião?</legend>
-
-                    <label>
-                        <input type="radio" name="ocasiao" value="aniversario" required>
-                        Aniversário
-                    </label>
+            </div>
+                <div class="formulario-final">
+                    <fieldset>
+                        <legend>Qual é a ocasião?</legend>
+                        <label>
+                            <input type="radio" name="ocasiao" value="aniversario" required>
+                            Aniversário
+                        </label>
                     
+                        <label>
+                            <input type="radio" name="ocasiao" value="romance">
+                            Romance
+                        </label>
+                        <label>
+                            <input type="radio" name="ocasiao" value="presente">
+                            Presente
+                        </label>
+                        <label>
+                            <input type="radio" name="ocasiao" value="outro">
+                            Outro
+                        </label>
+                    </fieldset>
                     <label>
-                        <input type="radio" name="ocasiao" value="romance">
-                        Romance
+                        <input type="checkbox" name="personalizado">
+                        Quero personalizar meu buquê
                     </label>
 
-                    <label>
-                        <input type="radio" name="ocasiao" value="presente">
-                        Presente
-                    </label>
-
-                    <label>
-                        <input type="radio" name="ocasiao" value="outro">
-                        Outro
-                    </label>
-                </fieldset>
-
-                <label>
-                    <input type="checkbox" name="personalizado">
-                    Quero personalizar meu buquê
-                </label>
-
-                <label for="observacoes">Observações:</label>
-
-                <textarea name="observacoes" id="observacoes" placeholder="Digite alguma observação sobre o seu pedido" rows="5"></textarea>
+                <div class="campo-observacao">
+                    <label for="observacoes">Observações:</label>
+                    <textarea name="observacoes" id="observacoes" placeholder="Digite alguma observação sobre o seu pedido" rows="5"></textarea>
 
                 <button type="submit">Enviar pedido</button>
+            </div></div>
             </form>
 
         </section>
     </main>
     <footer>
-        <h2>Petála & Amor</h2>
-        <p>Flores que transformam momentos em memórias</p>
+        <div class="footer-marca">
+            <h2>Petála & Amor</h2>
+            <p>Flores que transformam momentos em memórias</p>
+        </div>
+
+         <div class="footer-contatos">
+            <a href="#">📸 Instagram</a> 
+            <a href="#">💬 WhatsApp</a> 
+            <a href="#">📧 E-mail</a>
+        </div>
 
         <nav>
             <a href="#inicio">Início</a>
@@ -225,7 +239,11 @@
             <a href="#buques">Buquês</a>
             <a href="#formulario">Contato</a>
         </nav>
-        <p>&copy;2026 Petála & Amor. Todos os direitos reservados</p>
+
+        <div class="footer-direita">
+            <p>Flores feitas com carinho</p>
+        </div>
+        <p class="copyri">&copy;2026 Petála & Amor. Todos os direitos reservados</p>
     </footer>
     
 </body>
