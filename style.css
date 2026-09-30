@@ -74,7 +74,7 @@ header nav a:hover{
     font-size: 1.4rem;
 }
 
-.hero{
+.inicio{
     background-color: #f7b6c8;
     padding: 40px 7%;
     display: flex;
@@ -83,40 +83,40 @@ header nav a:hover{
     gap: 30px;
 }
 
-.hero-texto{
+.inicio-texto{
   flex: 1;
 }
 
-.hero-imagem{
+.inicio-imagem{
    flex: 1;
 }
 
-.hero-texto h1{
+.inicio-texto h1{
     color: #6b4e4e;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     line-height: 1.2;
 }
 
-.hero-texto p{
+.inicio-texto p{
     color: #6b4e4e;
     line-height: 1.6;
     text-align: justify;
     line-height: 1.5;
 }
 
-.hero-imagem figure{
+.inicio-imagem figure{
     margin: 0;
 }
 
-.hero-imagem img{
+.inicio-imagem img{
     width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 20px;
 }
 
-.hero-imagem figcaption{
+.inicio-imagem figcaption{
     color: #6b4e4e;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -496,23 +496,23 @@ footer nav a:hover{
         justify-content: center;
     }
 
-    .hero{
+    .inicio{
         flex-direction: column;
         text-align: center;
         min-height: 70vh;
         padding: 5vh 5vw;
     }
 
-    .hero-texto{
+    .inicio-texto{
         width: 100%;
         text-align: center;
     }
 
-    .hero-texto p{
+    .inicio-texto p{
         text-align: center;
     }
 
-    .hero-texto h1{
+    .inicio-texto h1{
         color: #6b4e4e;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2.5rem;
@@ -520,11 +520,11 @@ footer nav a:hover{
         text-align: center;
     }
 
-    .hero-imagem{
+    .inicio-imagem{
         width: 100%;
     }
 
-    .hero-imagem img{
+    .inicio-imagem img{
         height: 30vh;
     }
 

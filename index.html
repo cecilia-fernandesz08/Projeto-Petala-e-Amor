@@ -20,7 +20,7 @@
             <a href="#inicio">Início</a>
             <a href="#flores">Flores</a>
             <a href="#buques">Buquês</a>
-            <a href="#">Contato</a>
+            <a href="#contato">Contato</a>
             <a href="#sobre">Sobre</a>
         </nav>
         <div class="acoes-header">
@@ -30,9 +30,9 @@
     </header>
     <main>
     
-        <section id="inicio" class="hero">
+        <section id="inicio" class="inicio">
 
-            <div class="hero-texto">
+            <div class="inicio-texto">
 
                 <p>FLORES PARA TODOS OS MOMENTOS</p>
 
@@ -40,9 +40,9 @@
 
                 <p>Na Pétala & Amor, cada flor é escolhida com carinho para tornar seus momentos ainda mais especiais.</p>
 
-                <a href="#buques" class="botao">Ver nossos buquês</a>
+                <a href="#formulario" class="botao">Faça o seu pedido</a>
             </div>
-             <div class="hero-imagem">
+             <div class="inicio-imagem">
                 <figure>
                     <img src="img/buque-hero.png" alt="Buquê de flores rosas e brancas">
                     <figcaption>Flores para momentos especiais</figcaption>
@@ -87,9 +87,9 @@
                     <figure>
                         <img src="img/buque-romantico.png" alt="Rosas vermelhas">
                         <figcaption>Rosas vermelhas</figcaption>
-                        <h3>Rosas vermelhas</h3>
-                        <p>Símbolo de amor e paixão, perfeita para expressar sentimentos e tornar momentos especiais ainda mais inesquecíveis.</p>
                     </figure>
+                    <h3>Rosas vermelhas</h3>
+                    <p>Símbolo de amor e paixão, perfeitas para expressar sentimentos e tornar momentos especiais ainda mais inesquecíveis.</p>
                 </article>
             </div>
         </section>
@@ -107,27 +107,27 @@
             </article>
             <article>
                 <figure>
-                    <img src="img/buque-delicado.png" alt="buquê delicado com flores claras">
+                    <img src="img/buque-delicado.png" alt="Buquê delicado com flores claras">
                     <figcaption>Buquê Delicado</figcaption>
                 </figure>
                 <h3>Buquê Delicado</h3>
-                <p>Flores suaves para demonstrar carinho e afeto </p>
+                <p>Flores suaves para demonstrar carinho e afeto</p>
                 <p>R$ 99,90</p>
                 <button type="button">Adicionar ao pedido 🛒</button>
             </article>
             <article>
                 <figure>
-                    <img src="img/buque-alegria.png" alt="buque colorido de flores">
+                    <img src="img/buque-alegria.png" alt="Buquê colorido de flores">
                     <figcaption>Buquê Alegria</figcaption>
                 </figure>
                 <h3>Buquê Alegria</h3>
-                <p>Uma combinação colorida para deixar o dia mais feliz </p>
+                <p>Uma combinação colorida para deixar o dia mais feliz</p>
                 <p>R$ 89,90</p>
                 <button type="button">Adicionar ao pedido 🛒</button>
             </article>
             <article>
                 <figure>
-                    <img src="img/buque-elegancia.png" alt="buquê elegante com flores claras">
+                    <img src="img/buque-elegancia.png" alt="Buquê elegante com flores claras">
                     <figcaption>Buquê Elegância</figcaption>
                 </figure>
                 <h3>Buquê Elegância</h3>
@@ -144,13 +144,13 @@
             </div>
             <div class="sobre-conteudo">
                 <h2>Sobre a Pétala & Amor</h2>
-                <p>Na Petála & Amor, acreditamos que as flores tornam momentos especiais ainda mais inesquecíveis.</p>
+                <p>Na Pétala & Amor, acreditamos que as flores tornam momentos especiais ainda mais inesquecíveis.</p>
                 <p>Trabalhamos com flores frescas e buquês preparados com carinho para cada ocasião.</p>
                 <button>Conheça a nossa história -></button>
             </div>
 
             <div class="conteudo-escolher">
-                <h3>Por que escolher a Petála & Amor</h3>
+                <h3>Por que escolher a Pétala & Amor</h3>
                 <ul>
                     <li>🌷 Flores frescas</li>
                     <li>💐 Buquês personalizados</li>
@@ -168,7 +168,7 @@
 
             <form action="">
                 <div class="formulario-campos">
-                    <div clpo">
+                    <div class="campo">
                         <label for="nome">Nome completo:</label>
                         <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required pattern="[A-Za-zÀ-ÿ\s]+">
                     </div>
@@ -184,15 +184,18 @@
                         <label for="data">Data da entrega</label>
                         <input type="date" id="data" name="data" required>
                     </div>
+                    
+                <div class="campo">
                     <label for="tipo">Escolha seu buquê:</label>
+                    <select name="tipo" id="tipo" required>
+                        <option value="">Selecione uma opção</option>
+                        <option value="romatico">Buquê Romântico</option>
+                        <option value="delicado">Buquê Delicado</option>
+                        <option value="alegria">Buquê Alegria</option>
+                        <option value="elegancia">Buquê Elegância</option>
+                    </select>
+                </div>
 
-                <select name="tipo" id="tipo" required>
-                    <option value="">Selecione uma opção</option>
-                    <option value="romatico">Buquê Romântico</option>
-                    <option value="delicado">Buquê Delicado</option>
-                    <option value="alegria">Buquê Alegria</option>
-                    <option value="elegancia">Buquê Elegância</option>
-                </select>
             </div>
                 <div class="formulario-final">
                     <fieldset>
@@ -201,7 +204,7 @@
                             <input type="radio" name="ocasiao" value="aniversario" required>
                             Aniversário
                         </label>
-                    
+    
                         <label>
                             <input type="radio" name="ocasiao" value="romance">
                             Romance
@@ -215,24 +218,27 @@
                             Outro
                         </label>
                     </fieldset>
-                    <label class="personalizado">
-                        <input type="checkbox" name="personalizado">
-                        Quero personalizar meu buquê
-                    </label>
 
+                    <div class="personalizado">
+                        <label for="personalizado" >
+                            <input type="checkbox" name="personalizado" id="personalizado">
+                            Quero personalizar meu buquê
+                        </label>
+                    </div>
+    
                 <div class="campo-observacao">
                     <label for="observacoes">Observações:</label>
                     <textarea name="observacoes" id="observacoes" placeholder="Digite alguma observação sobre o seu pedido" rows="5"></textarea>
-
-                <button type="submit">Enviar pedido</button>
-            </div></div>
+                </div>  
+                     <button type="submit">Enviar pedido</button>
+                </div>
             </form>
-
         </section>
     </main>
     <footer>
+
             <div class="footer-marca">
-                <h2>Petála & Amor</h2>
+                <h2>Pétala & Amor</h2>
                 <p>Flores que transformam momentos em memórias</p>
             </div>
              <div class="footer-centro">
@@ -243,7 +249,7 @@
                     <a href="#formulario">Contato</a>
                     <a href="#sobre">Sobre</a>
                  </nav>
-                 <div class="footer-contatos">
+                 <div class="footer-contatos" id="contatos">
                     <a href="#">📸 Instagram</a>
                     <a href="#">💬 WhatsApp</a>
                     <a href="#">📧 E-mail</a>
@@ -253,7 +259,7 @@
                 <p>🌷 Flores feitas com carinho</p>
             </div>
         
-        <p class="copyright">&copy;2026 Petála & Amor. Todos os direitos reservados</p>
+        <p class="copyright">&copy;2026 Pétala & Amor. Todos os direitos reservados</p>
     </footer>
     
 </body>
