@@ -84,7 +84,11 @@ header nav a:hover{
 }
 
 .hero-texto{
-  width: 55%;
+  flex: 1;
+}
+
+.hero-imagem{
+   flex: 1;
 }
 
 .hero-texto h1{
@@ -99,10 +103,6 @@ header nav a:hover{
     line-height: 1.6;
     text-align: justify;
     line-height: 1.5;
-}
-
-.hero-imagem{
-    width: 45%;
 }
 
 .hero-imagem figure{
@@ -154,10 +154,10 @@ header nav a:hover{
 }
 
 .categorias{
-    padding: 2rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 1.5rem;   
+    padding: 2rem;
 }
 
 .categorias article{
@@ -252,7 +252,7 @@ header nav a:hover{
 }
 
 .imagem-sobre{
-    width: 33%;
+    flex: 1;
 }
 
 .imagem-sobre img{
@@ -296,12 +296,11 @@ header nav a:hover{
 }
 
 .conteudo-escolher{
-    width: 33.3%;
-    
+    flex: 1;
 }
 
 .sobre-conteudo{
-    width: 33.3%;
+   flex: 1;
     border-right: 2px solid #ae2f62;
     padding-right: 4rem;
 }
@@ -338,10 +337,19 @@ header nav a:hover{
 .formulario form{
     width: auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin-left: 0 ;
 }
+.formulario-campos{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.formulario-final{
+    display: grid;
+    gap: 1rem;
+}
+
 .formulario h2{
     text-align: center;
     margin-bottom: 1rem;
@@ -366,7 +374,7 @@ header nav a:hover{
     border-radius: 1rem;   
 }
 
-#formulario > label{
+.formulario > label{
     display: block;
     margin-bottom: 0.3rem;
 }
@@ -455,7 +463,7 @@ footer nav a:hover{
     gap: 1rem;
 }
 
-@media (max-width:780px){
+@media (max-width:768px){
 
     header{
         flex-direction: column;
@@ -477,7 +485,7 @@ footer nav a:hover{
     }
 
     .hero-texto{
-        width: 55%;
+        width: 100%;
         text-align: center;
     }
 
@@ -485,7 +493,7 @@ footer nav a:hover{
         color: #6b4e4e;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2.5rem;
-        line-height: 1.2;
+        line-height: 1.5;
         text-align: center;
     }
 
@@ -530,7 +538,7 @@ footer nav a:hover{
         padding-bottom: 2rem;
     }
 
-    #formulaio{
+    #formulario{
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -549,6 +557,11 @@ footer nav a:hover{
         grid-template-columns: 1fr;
         gap: 1rem;
     }
+
+    .formulario-campos{
+        grid-template-columns: 1fr;
+    }
+
     .campo{
         width: 100%;
     }
@@ -573,7 +586,7 @@ footer nav a:hover{
         justify-self: center;
     }
 
-    .footer{
+    footer{
         flex-direction: column;
         gap: 2rem;
         align-items: center;
