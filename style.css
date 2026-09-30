@@ -9,7 +9,6 @@ html{
 }
 
 body{
-    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
 }
@@ -59,7 +58,6 @@ header nav{
 header a{
     color: #6b4e4e;
     text-decoration: none;
-    font-size: 1rem;
 }
 
 header nav a:hover{
@@ -68,7 +66,6 @@ header nav a:hover{
 
 .acoes-header{
     display: flex;
-    align-items: center;
     gap: 1rem;
     color: #6b4e4e;
     font-size: 1.4rem;
@@ -76,6 +73,7 @@ header nav a:hover{
 
 .inicio{
     background-color: #f7b6c8;
+    color: #6b4e4e;
     padding: 40px 7%;
     display: flex;
     align-items: center;
@@ -83,24 +81,17 @@ header nav a:hover{
     gap: 30px;
 }
 
-.inicio-texto{
-  flex: 1;
-}
-
-.inicio-imagem{
-   flex: 1;
+.inicio-texto .inicio-imagem{
+    flex: 1;
 }
 
 .inicio-texto h1{
-    color: #6b4e4e;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5rem;
     line-height: 1.2;
 }
 
 .inicio-texto p{
-    color: #6b4e4e;
-    line-height: 1.6;
     text-align: justify;
     line-height: 1.5;
 }
@@ -131,7 +122,7 @@ header nav a:hover{
     text-decoration: none;
 }
 
-.botao:hover{
+.botao:hover,.buques button:hover,.sobre-conteudo button:hover,.formulario-final button:hover {
     background-color: #6b4e4e;
 }
 
@@ -160,12 +151,16 @@ header nav a:hover{
     padding: 2rem;
 }
 
-.categorias article{
-    background-color: #FDCBDC;
+.categorias article, .buques article{
     border: none ;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0.3rem 0.3rem 0.3rem #6b4e4e;
+}
+
+
+.categorias article{
+    background-color: #FDCBDC;
 }
 
 .categorias img{
@@ -175,13 +170,13 @@ header nav a:hover{
     border-radius: 25px;
 }
 
-.categorias h3{
+.categorias h3, .buques h3{
     font-size: 1.5rem;
     color: #ae2f62;
     margin: 0.5rem;
 }
 
-.categorias article p{
+.categorias article p, .buques article p{
     line-height: 1.5;
     font-size: 1rem;
     color: #C37992;
@@ -204,10 +199,7 @@ header nav a:hover{
 .buques article{
     background-color: #fff8f5;
     padding: 1.5rem;
-    border-radius: 1.5rem;
-    box-shadow: 0.3rem 0.3rem 0.3rem #6b4e4e;
 }
-
 
 .buques img{
     width: 100%;
@@ -216,30 +208,13 @@ header nav a:hover{
     border-radius: 2rem;
 }
 
-.buques h3{
-    font-size: 1.5rem;
-    color: #ae2f62;
-    margin: 0.5rem;
-}
-
-.buques article p{
-    line-height: 1.5;
-    font-size: 1rem;
-    color: #C37992;
-}
-
-.buques button{
+.buques button, .sobre-conteudo button, .formulario-final button{
     background-color:#ae2f62;
     color: white;
     padding: 0.5rem;
     border-radius: 2rem;
     border: none;
     display: inline-block;
-}
-
-.buques button:hover{
-    background-color: #6b4e4e;
-
 }
 
 .sobre{
@@ -251,7 +226,7 @@ header nav a:hover{
     align-items: flex-start;
 }
 
-.imagem-sobre{
+.imagem-sobre, .sobre-conteudo, .conteudo-escolher{
     flex: 1;
 }
 
@@ -266,7 +241,6 @@ header nav a:hover{
     text-align: center;
     color: #ae2f62;
     font-size: 2rem;
-    padding-bottom: 0.5rem;
     margin-bottom: 0.5rem;
 
 }
@@ -295,25 +269,9 @@ header nav a:hover{
     margin-bottom:1rem;
 }
 
-.conteudo-escolher{
-    flex: 1;
-}
-
 .sobre-conteudo{
-   flex: 1;
     border-right: 2px solid #ae2f62;
     padding-right: 4rem;
-}
-.sobre-conteudo button{
-    background-color:#ae2f62;
-    color: white;
-    padding: 1rem ;
-    border-radius: 2rem;
-    border: none;
-}
-
-.sobre-conteudo button:hover{
-    background-color: #6b4e4e;
 }
 
 #formulario{
@@ -353,7 +311,10 @@ header nav a:hover{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
+    align-self: flex-end;
 }
+
 .formulario-final fieldset{
     display: flex;
     flex-direction: column;
@@ -366,38 +327,18 @@ header nav a:hover{
     gap: 0.5rem;
 }
 
-.formulario h2{
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-#formulario input[type="text"], #formulario input[type="email"],#formulario input[type="password"],#formulario input[type="date"]{
+#formulario input:not([type="radio"]):not([type="checkbox"]), #formulario select, #formulario textarea{
     width: 100%;
     padding: 0.5rem;
     border-radius: 0.5rem;
-    margin-bottom: 0.5rem;
 }
 
-#formulario select{
-    width: 100%;
-    padding: 0.5rem;
+#formulario select, #formulario textarea{
     border-radius: 1rem;
-}
-
-#formulario textarea{
-    width: 100%;
-    padding: 0.5rem;
-    border-radius: 1rem;   
-}
-
-.formulario > label{
-    display: block;
-    margin-bottom: 0.3rem;
 }
 
 .campo{
     display: grid;
-    grid-template-columns: 1fr;
     gap: 0.5rem;
 }
 
@@ -406,23 +347,6 @@ header nav a:hover{
     display: grid;
 }
 
-fieldset label{
-    display: block;
-}
-
-.campo-observacao button{
-    margin-top: 1rem;
-    justify-self: flex-end;
-    background-color:#ae2f62;
-    color: white;
-    padding: 1rem ;
-    border-radius: 2rem;
-    border: none;
-}
-
-.campo-observacao button:hover{
-     background-color: #6b4e4e;
-}
 
 footer{
     background-color: #590219;
@@ -503,9 +427,8 @@ footer nav a:hover{
         padding: 5vh 5vw;
     }
 
-    .inicio-texto{
+    .inicio-texto, .inicio-imagem{
         width: 100%;
-        text-align: center;
     }
 
     .inicio-texto p{
@@ -513,28 +436,17 @@ footer nav a:hover{
     }
 
     .inicio-texto h1{
-        color: #6b4e4e;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 2.5rem;
-        line-height: 1.5;
-        text-align: center;
+        line-height: 1.7;
     }
-
-    .inicio-imagem{
-        width: 100%;
-    }
-
+    
     .inicio-imagem img{
         height: 30vh;
     }
 
-    .categorias{
+    .categorias,.buques{
         grid-template-columns: 1fr;
     }
 
-    .buques{
-        grid-template-columns: 1fr;
-    }
 
     .buques h2{
         grid-column: 1;
@@ -546,16 +458,11 @@ footer nav a:hover{
         padding: 5vw;
     }
 
-    .imagem-sobre{
-        width: 100%;
-    }
-
-    .conteudo-escolher{
+    .imagem-sobre,.conteudo-escolher,.sobre-conteudo{
         width: 100%;
     }
 
     .sobre-conteudo{
-        width: 100%;
         border-right: none;
         border-bottom: 2px solid #ae2f62;
         padding-right: 0;
@@ -563,10 +470,8 @@ footer nav a:hover{
     }
 
     #formulario{
-        display: flex;
         flex-direction: column;
         align-items: stretch;
-        gap: 2rem;
         padding: 5vh 5vw;
     }
 
@@ -579,31 +484,16 @@ footer nav a:hover{
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 1rem;
     }
 
     .formulario-campos{
         grid-template-columns: 1fr;
     }
 
-    .campo{
+    .campo, .formulario-final, .campo-observacao{
         width: 100%;
     }
 
-    #formulario input,#formulario select,#formulario textarea{
-        width: 100%;
-        box-sizing: border-box;
-    }
-    
-    .formulario-final{
-        width: 100%;
-    }
-
-    .formulario-final label{
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
 
     .formulario-final fieldset{
         width: 100%;
@@ -612,18 +502,10 @@ footer nav a:hover{
         align-items: flex-start;
         gap: 0.7rem;
     }
-
-    fieldset{
-        width: 100%;
+    .formulario-final button{
+        align-self: center;
     }
-
-    .campo-observacao{
-        width: 100%;
-    }
-    .campo-observacao button{
-        justify-self: center;
-    }
-
+   
     footer{
         flex-direction: column;
         gap: 2rem;
