@@ -477,7 +477,16 @@ footer nav a:hover{
     }
 
     .hero-texto{
-        width: 100%;
+        width: 55%;
+        text-align: center;
+    }
+
+    .hero-texto h1{
+        color: #6b4e4e;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2.5rem;
+        line-height: 1.2;
+        text-align: center;
     }
 
     .hero-imagem{
