@@ -14,7 +14,7 @@ body{
 }
 
 header{
-    background-color: #fff8f5;
+    background-color: #FFF5F8;
     padding: 1rem 6%;
     display: flex;
     align-items: center;
@@ -26,7 +26,7 @@ header{
     display: flex;
     align-items: center;
     gap: 0.6rem;
-    color: #6b4e4e;
+    color: #AE2F62;
 }
 
 .logo span{
@@ -35,14 +35,14 @@ header{
 
 .logo strong{
     display: block;
-    color: #6b4e4e;
+    color: #AE2F62;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5rem;
 }
 
 .logo small{
     display: block;
-    color: #ae2f62;
+    color: #AE2F62;
     font-size: 0.6rem;
     letter-spacing: 0.2rem;
 }
@@ -56,7 +56,7 @@ header nav{
 }
 
 header a{
-    color: #6b4e4e;
+    color: #AE2F62;
     text-decoration: none;
 }
 
@@ -67,13 +67,13 @@ header nav a:hover{
 .acoes-header{
     display: flex;
     gap: 1rem;
-    color: #6b4e4e;
+    color: #AE2F62;
     font-size: 1.4rem;
 }
 
 .inicio{
-    background-color: #f7b6c8;
-    color: #6b4e4e;
+    background-color: #FCE4EC;
+    color: #7A1644;
     padding: 40px 7%;
     display: flex;
     align-items: center;
@@ -129,14 +129,14 @@ header nav a:hover{
 .flores{
     padding: 2rem;
     text-align: center;
-    color: #ae2f62;
-    background-color: #E6C8CE;
+    color: #8B1E4F;
+    background-color: #F5CBD9;
 }
 
 .titulo-secao{
     text-align: center;
     margin: 2px;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #ae2f62;
 }
 
@@ -155,12 +155,12 @@ header nav a:hover{
     border: none ;
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0.3rem 0.3rem 0.3rem #6b4e4e;
+    box-shadow: 0.3rem 0.3rem 0.3rem #72153F;
 }
 
 
 .categorias article{
-    background-color: #FDCBDC;
+    background-color: #FCE4EC;
 }
 
 .categorias img{
@@ -179,14 +179,14 @@ header nav a:hover{
 .categorias article p, .buques article p{
     line-height: 1.5;
     font-size: 1rem;
-    color: #C37992;
+    color: #72153F;
 }
 
 .buques{
     padding: 2rem;
     text-align: center;
-    background-color: #f7b6c8;
-    color: #ae2f62;
+    background-color: #F9DCE7;
+    color: #8B1E4F;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
@@ -246,7 +246,7 @@ header nav a:hover{
 }
 
 .sobre p{
-    color: #C37992;
+    color: #72153F;
     line-height: 1.7;
     margin-bottom: 1rem;
 }
@@ -260,7 +260,7 @@ header nav a:hover{
 }
 
 .sobre ul{
-    color: #C37992;
+    color: #72153F;
     list-style: none;
     padding: 1rem;
 }
@@ -276,12 +276,12 @@ header nav a:hover{
 
 #formulario{
     padding: 2rem 5rem;
-    background-color: #FDCBDC;
+    background-color: #F8D3DF;
     display: flex;
     gap: 2rem;
     align-items: flex-start;
     justify-content: center;
-    color: #ae2f62;
+    color: #72153F;
 }
 
 .formulario-texto{
@@ -289,6 +289,7 @@ header nav a:hover{
     background-color: #fff8f5;
     padding: 3rem;
     border-radius: 2rem;
+    align-self: center;
     text-align: center;
     box-shadow: 0.2rem 0.2rem 0.2rem #6b4e4e;
 }
@@ -302,6 +303,7 @@ header nav a:hover{
 
 .formulario-campos{
     display: grid;
+    align-self: center;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
 }
