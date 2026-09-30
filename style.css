@@ -522,8 +522,11 @@ footer nav a:hover{
     }
 
     #formulaio{
+        display: flex;
         flex-direction: column;
-        padding: 2rem;
+        align-items: stretch;
+        gap: 2rem;
+        padding: 2rem 1rem;
     }
 
     .formulario-texto{
@@ -533,7 +536,32 @@ footer nav a:hover{
 
     .formulario form{
         width: 100%;
+        display: grid;
         grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .campo{
+        width: 100%;
+    }
+
+    #formulario input,#formulario select,#formulario textarea{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .formulario-final{
+        width: 100%;
+    }
+
+    fieldset{
+        width: 100%;
+    }
+
+    .campo-observacao{
+        width: 100%;
+    }
+    .campo-observacao button{
+        justify-self: center;
     }
 
     .footer{
