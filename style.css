@@ -252,7 +252,7 @@ header nav a:hover{
 }
 
 .imagem-sobre{
-    width: 33.%;
+    width: 33%;
 }
 
 .imagem-sobre img{
@@ -453,4 +453,99 @@ footer nav a:hover{
     flex-direction: column;
     align-items:  center;
     gap: 1rem;
+}
+
+@media (max-width:780px){
+
+    header{
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    header nav{
+        gap: 1rem;
+    }
+
+    .acoes-header{
+        justify-content: center;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-texto{
+        width: 100%;
+    }
+
+    .hero-imagem{
+        width: 100%;
+    }
+
+    .hero-imagem img{
+        height: 220px;
+    }
+
+    .categorias{
+        grid-template-columns: 1fr;
+    }
+
+    .buques{
+        grid-template-columns: 1fr;
+    }
+
+    .buques h2{
+        grid-column: 1;
+    }
+
+    .sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-sobre{
+        width: 100%;
+    }
+
+    .conteudo-escolher{
+        width: 100%;
+    }
+
+    .sobre-conteudo{
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px solid #ae2f62;
+        padding-right: 0;
+        padding-bottom: 2rem;
+    }
+
+    #formulaio{
+        flex-direction: column;
+        padding: 2rem;
+    }
+
+    .formulario-texto{
+        width: 100%;
+        padding: 2rem;
+    }
+
+    .formulario form{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    footer nav{
+        flex-wrap: wrap;
+    }
+
+
+
 }
