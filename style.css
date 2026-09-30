@@ -479,7 +479,7 @@ footer nav a:hover{
     gap: 1rem;
 }
 
-@media (max-width:768px){
+@media screen and (max-width:768px){
 
     header{
         flex-direction: column;
