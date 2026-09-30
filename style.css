@@ -492,24 +492,15 @@ footer nav a:hover{
         text-align: center;
     }
 
+    .hero-texto p{
+        text-align: center;
+    }
+
     .hero-texto h1{
         color: #6b4e4e;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 2.5rem;
         line-height: 1.5;
-        text-align: center;
-    }
-
-    .flores{
-        text-align: center;
-    }
-
-    .titulo-secao{
-        text-align: center;
-        width: 100%;
-    }
-
-    .titulo-secao p{
         text-align: center;
     }
 
